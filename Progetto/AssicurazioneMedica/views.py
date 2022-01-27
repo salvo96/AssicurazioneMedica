@@ -5,7 +5,7 @@ from AssicurazioneMedica.serializers import LoginSerializer, ClienteSerializer, 
 from AssicurazioneMedica.BusinessLogic import login, registrazione, richiestaPolizza, elencoPolizze, elencoSpese, calcoloPrezzo, inserimentoPolizzaCliente, controllaAutenticazione
 from AssicurazioneMedica.BusinessLogic.constant import messages
 
-#Operazioni Cliente
+# Operazioni Cliente
 @api_view(['POST'])
 def clienteLogin(request):
     if request.method == 'POST':
